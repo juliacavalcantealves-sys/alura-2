@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Financeiro - Análise em Tempo Real</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">📈 Mercado Financeiro</h1>
+            <nav class="nav">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#analise" class="nav-link">Análise</a>
+                <a href="#graficos" class="nav-link">Gráficos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="main-content">
+        <!-- Seção de Início -->
+        <section id="inicio" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Acompanhe o Mercado Financeiro</h2>
+                    <p>Visualize tendências de mercado com análises em tempo real através de gráficos interativos</p>
+                    <button id="btn-iniciar" class="btn btn-primary">Iniciar Análise</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Análise -->
+        <section id="analise" class="section analise">
+            <div class="container">
+                <h2>Análise do Mercado</h2>
+                <div class="analise-grid">
+                    <div class="card">
+                        <h3>IBOVESPA</h3>
+                        <p class="valor">+2.5%</p>
+                        <p class="descricao">Índice de ações brasileiras</p>
+                    </div>
+                    <div class="card">
+                        <h3>USD/BRL</h3>
+                        <p class="valor">4.95</p>
+                        <p class="descricao">Taxa de câmbio dólar</p>
+                    </div>
+                    <div class="card">
+                        <h3>Selic</h3>
+                        <p class="valor">10.5%</p>
+                        <p class="descricao">Taxa básica de juros</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ouro</h3>
+                        <p class="valor">+1.8%</p>
+                        <p class="descricao">Preço por grama</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Gráficos p5.js -->
+        <section id="graficos" class="section graficos">
+            <div class="container">
+                <h2>Visualizações Interativas</h2>
+                <div class="p5-container">
+                    <div id="p5-sketch"></div>
+                </div>
+                <div class="controles">
+                    <button id="btn-grafico1" class="btn btn-secondary active">Gráfico 1</button>
+                    <button id="btn-grafico2" class="btn btn-secondary">Gráfico 2</button>
+                    <button id="btn-grafico3" class="btn btn-secondary">Gráfico 3</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="section contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form class="form-contato" id="form-contato">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mercado Financeiro. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacidade</a>
+                <a href="#terms">Termos de Uso</a>
+                <a href="#sitemap">Mapa do Site</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="sketch.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
